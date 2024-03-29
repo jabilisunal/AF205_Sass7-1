@@ -1,0 +1,7 @@
+@mixin getButton($backColor,$ping,$textColor,$fontSize,$borderRadius){
+    background-color: $textColor;
+    padding: $ping;
+    color: $backColor;
+    font-size: $fontSize;
+    border-radius: $borderRadius;
+}

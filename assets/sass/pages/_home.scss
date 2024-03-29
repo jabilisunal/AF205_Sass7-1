@@ -1,0 +1,93 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+#from-blog {
+  .from__title {
+    text-align: center;
+    h1 {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .cards-area {
+    @extend .myFlex-center;
+    gap: 20px;
+    .card {
+      width: 350px;
+      &__img {
+        width: 350px;
+        img {
+          width: 100%;
+        }
+      }
+      &__body {
+        &__items {
+          @extend .myFlexjc-start;
+          gap: 10px;
+          .date {
+            span {
+              color: $subTitle-color;
+            }
+            i {
+              color: $main-color;
+            }
+          }
+          .comments {
+            i {
+              color: $main-color;
+            }
+            span {
+              color: $subTitle-color;
+            }
+          }
+        }
+        &__titles {
+          h2 {
+            color: $black-color;
+            font-size: $title-fontSize;
+            @extend .myFont;
+          }
+          p {
+            @extend .myFontTitle;
+            color: $second-subTitle-color;
+            font-size: $subTitle-fontSize;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-success {
+  @include getButton(green, 20px, white, 24px, 10px);
+  text-decoration: underline;
+  transition: all 1s;
+  background-color: $main-color;
+  &:hover {
+    padding: 10px;
+    font-size: 20px;
+    background-color: gold;
+    cursor: pointer;
+  }
+}
+.btn-danger {
+  @include getButton(red, 30px, black, 40px, 0px);
+}
+
+.card-relative {
+  position: relative;
+  width: 300px;
+  .image-area {
+  position: relative;
+
+    width: 300px;
+    img {
+      width: 100%;
+    }
+    h3 {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}

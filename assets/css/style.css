@@ -1,0 +1,89 @@
+#from-blog .from__title {
+  text-align: center; }
+  #from-blog .from__title h1:hover {
+    color: red; }
+
+#from-blog .cards-area {
+  gap: 20px; }
+  #from-blog .cards-area .card {
+    width: 350px; }
+    #from-blog .cards-area .card__img {
+      width: 350px; }
+      #from-blog .cards-area .card__img img {
+        width: 100%; }
+    #from-blog .cards-area .card__body__items {
+      gap: 10px; }
+      #from-blog .cards-area .card__body__items .date span {
+        color: #a2a1a1; }
+      #from-blog .cards-area .card__body__items .date i {
+        color: #e7ab3c; }
+      #from-blog .cards-area .card__body__items .comments i {
+        color: #e7ab3c; }
+      #from-blog .cards-area .card__body__items .comments span {
+        color: #a2a1a1; }
+    #from-blog .cards-area .card__body__titles h2 {
+      color: #212529;
+      font-size: 24px; }
+    #from-blog .cards-area .card__body__titles p {
+      color: #636363;
+      font-size: 16px; }
+
+.btn-success {
+  background-color: white;
+  padding: 20px;
+  color: green;
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: underline;
+  transition: all 1s;
+  background-color: #e7ab3c; }
+  .btn-success:hover {
+    padding: 10px;
+    font-size: 20px;
+    background-color: gold;
+    cursor: pointer; }
+
+.btn-danger {
+  background-color: black;
+  padding: 30px;
+  color: red;
+  font-size: 40px;
+  border-radius: 0px; }
+
+.card-relative {
+  position: relative;
+  width: 300px; }
+  .card-relative .image-area {
+    position: relative;
+    width: 300px; }
+    .card-relative .image-area img {
+      width: 100%; }
+    .card-relative .image-area h3 {
+      position: absolute;
+      bottom: 0px;
+      left: 0px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+.myFlexjc-start, #from-blog .cards-area .card__body__items {
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+
+.myFlex-center, #from-blog .cards-area {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.myFont, #from-blog .cards-area .card__body__titles h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  line-height: 30px; }
+
+.myFontTitle, #from-blog .cards-area .card__body__titles p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  line-height: 30px; }
